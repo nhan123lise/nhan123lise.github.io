@@ -43,6 +43,9 @@ netlify deploy --dir site --prod   # production — personal Netlify account, NO
 Verify visually: screenshot at 1440 / 1024 / 768 / 390 / 320 px with `agent-browser` and
 compare against the mockups, plus keyboard checks for the nav dialog and `<details>`.
 
+Automated gate before every merge: `npx --yes -p playwright@1.55.1 node scripts/check.mjs [baseUrl]`
+(3 engines × 5 viewports; exit 1 on any FAIL; screenshots to `$TMPDIR/portfolio-check`).
+
 ## Git
 
 No `Co-Authored-By` trailers in commits.

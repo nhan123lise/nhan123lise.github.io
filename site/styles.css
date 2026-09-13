@@ -1493,6 +1493,7 @@ a.site-name:hover { color: var(--ink); }
     --paper: #fff;
     --copy: var(--ink);
     --route-blue: var(--ink);
+    --row-pad: 0; /* no washes on paper, so rows don't hang into the gutter */
     /* Compact spacing tokens: every var(--space-N) gap/margin/padding shrinks with them. */
     --space-1: 0.2rem;
     --space-2: 0.3rem;
@@ -1503,9 +1504,14 @@ a.site-name:hover { color: var(--ink); }
     --space-12: 0.6rem;
     --space-16: 0.7rem;
     --space-24: 0.9rem;
+    --rhythm-tight: 0.3rem;
+    --rhythm-item: 0.4rem;
+    --rhythm-head: 0.4rem;
+    --rhythm-section: 0.5rem;
+    --label-block: 0;
   }
   body { background: #fff; font-size: 0.8rem; line-height: 1.2; }
-  /* Table rows are the biggest padding offenders (itinerary + engagements tables). */
+  /* Itinerary table rows are the biggest padding offender. */
   th, td { padding: 0.15rem 0.6rem 0.15rem 0; }
 
   /* Chrome, decoration and anything that duplicates on-page content. */
@@ -1513,7 +1519,7 @@ a.site-name:hover { color: var(--ink); }
   .rs-illustration, .site-footer__links {
     display: none;
   }
-  .wash::before, .eyebrow::before, .link-wash::after,
+  .wash::before, .link-wash::after, .ct-email__link::after,
   .hero__portrait::before, .hero__portrait::after {
     display: none;
   }
@@ -1531,20 +1537,26 @@ a.site-name:hover { color: var(--ink); }
   .disclosure__meta, .disclosure__aside { font-size: 0.75rem; }
   .xp-evidence { font-size: 0.8rem; }
   .rs-method { font-size: 0.85rem; margin-bottom: 0.5rem; }
-  .about__copy { font-size: 0.85rem; }
+  .about__copy { font-size: 0.85rem; line-height: 1.35; }
+  .ed-skills__value { font-size: 0.8rem; }
 
   .section { padding-block: 0.3rem; }
   /* break-after:avoid on .eyebrow doesn't stop Chromium fragmenting an inline-block box mid-section-head
      (eyebrow stranded, heading on the next page) — keep the whole head together instead. */
   .section-head { margin-bottom: 0.35rem; break-inside: avoid; }
+  /* Split heads (h2 left, lede right) only compose at screen widths; stack them on paper. */
+  .section-head--split { display: block; }
   .hero { padding-block: 0; }
 
   .hero__grid {
-    grid-template-columns: 1fr auto;
-    grid-template-areas: "intro portrait" "availability portrait";
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "intro portrait" "availability portrait" "proof portrait";
     align-items: start;
     gap: 0.3rem 1rem;
   }
+  .hero__proof { margin-top: 0.4rem; gap: 0.3rem 1.5rem; }
+  .hero__proof-figure { font-size: 1.1rem; }
+  .hero__proof-label { font-size: 0.75rem; }
   .hero__portrait { width: 8rem; margin: 0; justify-self: end; }
   .print { padding: 0; background: none; transform: none; box-shadow: none; }
 
@@ -1571,18 +1583,21 @@ a.site-name:hover { color: var(--ink); }
   .ed-skills { grid-template-columns: repeat(3, 1fr); }
 
   .site-footer { padding-block: 0.3rem; }
-  .ct-cv__link, .ct-links__link { min-height: auto; }
+  .ct-cv__link, .ct-links__link, .ct-email__link { min-height: auto; }
+  .ct-grid { gap: 0.4rem; }
+  .ct-email__link { font-size: 1rem; }
 
-  .about__grid { gap: 0.5rem; }
   .about__mobility { margin-top: 0.4rem; }
-  .about__proof { padding: 0.4rem; }
 
   .rs-tile { padding: 0.15rem 0.2rem 0.2rem; }
   .rs-tile__value { font-size: 1.1rem; }
   .rs-results__label { font-size: 0.75rem; margin-bottom: 0.2rem; }
   .rs-detail { margin-top: 0.5rem; }
-  .xp-table { margin-top: 0.4rem; }
-  .xp-table caption { padding-bottom: 0.15rem; font-size: 0.85rem; }
+  /* "Full role detail" nested disclosure: keep its label as a subheading, drop the tap-target sizing. */
+  .xp-more, .xp-more__body { margin-top: 0.3rem; }
+  .xp-more__summary { min-height: auto; font-size: 0.85rem; }
+  .xp-clients__title { margin: 0.4rem 0 0.15rem; font-size: 0.85rem; }
+  .xp-clients { row-gap: 0.1rem; }
 
   /* Wash pseudo-elements carry the arXiv underline; reset every box/paint property it sets
      (including display: the generic .link-wash::after hider above also matches this element). */

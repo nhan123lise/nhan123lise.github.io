@@ -1,0 +1,1 @@
+Bricolage Grotesque (c) The Bricolage Grotesque Project Authors, Source Sans 3 (c) Google Inc./The Source Sans Project Authors, Caveat (c) The Caveat Project Authors — all licensed under the SIL Open Font License, Version 1.1 (https://scripts.sil.org/OFL); subset woff2 files sourced from the @fontsource npm packages.

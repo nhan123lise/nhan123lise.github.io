@@ -31,7 +31,7 @@ Currently in Compiègne, France · from Da Nang, Vietnam
 
 Second-year Erasmus Mundus master's student in **Advanced Machine Learning and Optimisation of Systems**, moving between UPC Barcelona (EEBE) and UTC Compiègne. Looking for a **six-month internship in AI, optimisation or data, starting February 2027, anywhere in the EU**.
 
-I like work where the deadline and the evidence both matter. For three years I built pipelines for demanding clients, including a **US$43B alternative-investments fund** and a games platform with **30M monthly players**, where the work had to ship and had to be right. Alongside that I've published on when deep methods aren't worth their complexity, and spent a summer in Taiwan making a frozen object detector much more robust without touching its weights.
+I like work where the deadline and the evidence both matter. For three years I built data systems for demanding clients and teams, including optimised SQL and data models for a **US$43B alternative-investments fund** and game analytics for a platform with **30M monthly players**. Alongside that I wrote a paper, accepted at SmartAgri & SuSY 2026, on when deep imputation models aren't worth their complexity, and spent a summer in Taiwan making a frozen object detector much more robust without touching its weights.
 
 Before the master's: SQL, Databricks and Power BI at **FPT Software** and **Ubisoft**, and an engineering degree from **VNUK, University of Da Nang**, where I finished first in my cohort.
 
@@ -83,10 +83,11 @@ Enrolled at **UTC Compiègne through August 2027**, so a French *convention de s
 
 **FPT Software · Vietnam** · delivering to US, EU & APAC clients
 
-- Led analytics engineering across financial services, transportation, and fintech; designed end-to-end pipelines from SQL extraction to executive PowerBI reporting.
-- Built a Databricks pipeline applying regex-based device-name standardization across **5 GB** of daily incremental data, guaranteeing data integrity from bronze to gold layer.
-- Reduced reporting latency from days to real-time by automating manual processes and delivering interactive PowerBI dashboards with complex DAX calculations at national and regional scale.
-- Engineered optimized SQL queries and streamlined data models for a **US$43B AUM** alternative-investments fund; researched and evaluated RAG-based NL-to-SQL solutions for non-technical stakeholders.
+- Led analytics engineering across financial services, transportation, and fintech; designed end-to-end pipelines from SQL extraction to executive Power BI reporting.
+- Built a Databricks pipeline applying regex-based device-name standardisation across **5 GB** of daily incremental data, guaranteeing data integrity from bronze to gold layer.
+- Reduced reporting latency from days to real time by automating manual processes and delivering interactive Power BI dashboards with complex DAX calculations at national and regional scale.
+- Engineered optimised SQL queries and streamlined data models for a **US$43B AUM** alternative-investments fund.
+- Researched and evaluated RAG-based NL-to-SQL solutions for non-technical stakeholders.
 
 **Selected engagements**
 
@@ -103,8 +104,8 @@ Enrolled at **UTC Compiègne through August 2027**, so a French *convention de s
 
 **FPT Software · Vietnam**
 
-- Modernized board-level fund reporting by migrating full-suite manual Excel reports (NAV, cash flow, portfolio performance) into automated SQL + PowerBI solutions with Row-Level Security.
-- Designed SSRS reports and an Azure billing pipeline tracking cloud spend across all services, presenting monthly and yearly cost breakdowns in PowerBI for the Chief of Data.
+- Modernised board-level fund reporting by migrating full-suite manual Excel reports (NAV, cash flow, portfolio performance) into automated SQL + Power BI solutions with Row-Level Security.
+- Designed SSRS reports and an Azure billing pipeline tracking cloud spend across all services, presenting monthly and yearly cost breakdowns in Power BI for the Chief of Data.
 
 ---
 
@@ -113,7 +114,7 @@ Enrolled at **UTC Compiègne through August 2027**, so a French *convention de s
 **Ubisoft · Vietnam**
 
 - Delivered game analytics across two live projects — including a nano-games platform with **30M+ monthly active users across 13 games** — via interactive Tableau and Tableau Server reports.
-- Built end-to-end BigQuery + Firebase pipelines to track player behavior and game performance across production environments.
+- Built end-to-end BigQuery + Firebase pipelines to track player behaviour and game performance across production environments.
 - Designed entity-relationship models and tracking documentation, collaborating with developers, QA, game designers, and economy designers across implementation and production.
 
 ---
@@ -146,11 +147,11 @@ UPC Barcelona EEBE (sem. 1) → Polytechnic University of Tirana (sem. 2 mobilit
 
 **Data Engineering** — Databricks · MS SQL Server · BigQuery · Firebase · PySpark · Airflow
 
-**Visualization / BI** — PowerBI · Tableau · SSRS · DAX · Power Query
+**Visualisation / BI** — Power BI · Tableau · SSRS · DAX · Power Query
 
 **Cloud & Tools** — Microsoft Azure · Google Cloud Platform · Git · Docker · tmux · uv · LaTeX
 
-**Research Areas** — Open-Vocabulary Detection · Test-Time Augmentation · Robustness · LLM Evaluation · Optimization · Reproducible Experimentation
+**Research Areas** — Open-Vocabulary Detection · Test-Time Augmentation · Robustness · LLM Evaluation · Optimisation · Reproducible Experimentation
 
 **Programming** — Python · SQL
 
@@ -162,7 +163,7 @@ UPC Barcelona EEBE (sem. 1) → Polytechnic University of Tirana (sem. 2 mobilit
 - LinkedIn — [/in/nhanthanh123](https://www.linkedin.com/in/nhanthanh123/)
 - GitHub — [/nhan123lise](https://github.com/nhan123lise)
 
-**CV, three tailored versions** — each maintained as a separate LaTeX source; request whichever fits the role, and I'll send that day.
+**CV, three tailored versions** — request whichever fits the role, and I'll send that day.
 
 - Research / R&D
 - Data / Analytics Engineering

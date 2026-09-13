@@ -41,7 +41,7 @@ Enrolled at **UTC Compiègne through August 2027**, so a French *convention de s
 
 ## Publications
 
-### SmartAgri & SuSY · 2026 — *accepted*
+### SmartAgri & SuSY 2026 (conference) — *accepted*
 
 **Deep Imputation Does Not Pay Off on Agricultural IoT Networks: A Rate-Swept Benchmark**
 
@@ -71,7 +71,7 @@ Enrolled at **UTC Compiègne through August 2027**, so a French *convention de s
 
 **Robustness under image corruption:**
 
-| Benchmark | mAP gain under corruption |
+| Benchmark | mAP gain under corruption (absolute points) |
 |---|---|
 | PASCAL-C | +7.16 |
 | COCO-C | +6.24 |
@@ -112,7 +112,7 @@ Enrolled at **UTC Compiègne through August 2027**, so a French *convention de s
 
 **Ubisoft · Vietnam**
 
-- Delivered game analytics across two live projects — including a nano-games platform with **30M+ active users across 13 games** — via interactive Tableau and Tableau Server reports.
+- Delivered game analytics across two live projects — including a nano-games platform with **30M+ monthly active users across 13 games** — via interactive Tableau and Tableau Server reports.
 - Built end-to-end BigQuery + Firebase pipelines to track player behavior and game performance across production environments.
 - Designed entity-relationship models and tracking documentation, collaborating with developers, QA, game designers, and economy designers across implementation and production.
 
@@ -150,7 +150,7 @@ UPC Barcelona EEBE (sem. 1) → Polytechnic University of Tirana (sem. 2 mobilit
 
 **Cloud & Tools** — Microsoft Azure · Google Cloud Platform · Git · Docker · tmux · uv · LaTeX
 
-**Research Areas** — Open-Vocabulary Detection · Test-Time Adaptation · Robustness · LLM Evaluation · Optimization · Reproducible Experimentation
+**Research Areas** — Open-Vocabulary Detection · Test-Time Augmentation · Robustness · LLM Evaluation · Optimization · Reproducible Experimentation
 
 **Programming** — Python · SQL
 

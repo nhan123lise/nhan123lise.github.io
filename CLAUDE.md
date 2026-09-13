@@ -32,6 +32,9 @@ netlify deploy --dir site --prod   # production — personal Netlify account, NO
 - Never call either paper "published": one is *accepted*, one is *under review*.
 - mAP gains are `+7.16 / +6.24 / +5.42` with no `%`.
 - US$43B belongs to "optimized SQL and data models", not to executive reporting.
+- Confirmed facts (2026-09-13): Ubisoft figure is 30M+ **monthly** active users; 4 countries
+  studied & lived; mAP gains are **absolute points**; SmartAgri & SuSY is a **conference**;
+  the research area is Test-Time **Augmentation** (not Adaptation).
 - Senior FPT and CCU research disclosures are `open` by default; publication status, authorship,
   and Ubisoft's 30M+ / 13 games stay visible while collapsed.
 

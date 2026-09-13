@@ -54,6 +54,11 @@
   trigger.addEventListener('click', () => dialog.showModal());
   dialog.querySelector('.nav-sheet__close').addEventListener('click', () => dialog.close());
   // Escape / close button: the browser restores focus to the trigger on close.
+  // WebKit: clicked buttons aren't focused, so nothing is restored. Its own focus-fallback-to-body
+  // lands a frame after 'close' fires, so wait two rAFs before checking (measured: still stale after 0/1).
+  dialog.addEventListener('close', () => requestAnimationFrame(() => requestAnimationFrame(() => {
+    if (document.activeElement === document.body) trigger.focus();
+  })));
 
   dialog.addEventListener('click', (event) => {
     if (event.target === dialog) {

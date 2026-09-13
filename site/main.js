@@ -42,6 +42,11 @@
   const bandObserver = new ResizeObserver(sizeBands);
   bandRows.forEach((d) => bandObserver.observe(d));
 
+  // Print: open every disclosure so collapsed content prints, then restore.
+  const printOpened = [];
+  window.addEventListener('beforeprint', () => document.querySelectorAll('details:not([open])').forEach((d) => { printOpened.push(d); d.open = true; }));
+  window.addEventListener('afterprint', () => printOpened.splice(0).forEach((d) => { d.open = false; }));
+
   const dialog = document.querySelector('.nav-sheet');
   const trigger = document.querySelector('.menu-button');
   if (!dialog || !trigger) return;
@@ -51,9 +56,15 @@
   // Escape / close button: the browser restores focus to the trigger on close.
 
   dialog.addEventListener('click', (event) => {
-    if (event.target === dialog) return dialog.close(); // backdrop click
+    if (event.target === dialog) {
+      // Backdrop only: clicks on the sheet's own padding also target the dialog.
+      const r = dialog.getBoundingClientRect();
+      const outside = event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom;
+      if (outside) dialog.close();
+      return;
+    }
     const link = event.target.closest('a[href^="#"]');
-    const target = link && document.querySelector(link.hash);
+    const target = link && document.getElementById(link.hash.slice(1));
     if (!target) return;
     event.preventDefault();
     dialog.close(); // first: close() restores focus to the trigger synchronously

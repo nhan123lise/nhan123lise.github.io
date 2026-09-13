@@ -16,6 +16,7 @@
   <link rel="preload" href="assets/wash-blue.webp" as="image" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
   <script src="main.js" defer></script>
+  <noscript><style>@media (max-width: 767.98px) { .menu-button { display: none } .site-nav { display: block } .site-nav ul { flex-wrap: wrap } }</style></noscript>
 </head>
 <body>
   <svg class="sprite" width="0" height="0" aria-hidden="true" focusable="false">
@@ -132,15 +133,15 @@
 
         <details class="disclosure wash wash--blue about__mobility" style="--wash-opacity:.45">
           <summary class="disclosure__summary">
-            <hgroup class="disclosure__heading">
+            <div class="disclosure__heading">
               <h3 class="disclosure__title">Background &amp; mobility</h3>
               <p class="disclosure__meta">A working itinerary · 2019 – now</p>
-            </hgroup>
-            <span class="disclosure__aside">Đà Nẵng → Cluj-Napoca → Barcelona → Tirana → Chiayi → Compiègne</span>
+            </div>
+            <span class="disclosure__aside" aria-hidden="true">Đà Nẵng → Cluj-Napoca → Barcelona → Tirana → Chiayi → Compiègne</span>
             <span class="chevron" aria-hidden="true"><svg class="icon"><use href="#i-chevron"/></svg></span>
           </summary>
           <div class="disclosure__body">
-            <div class="table-scroll">
+            <div class="table-scroll" tabindex="0" role="region" aria-label="Working itinerary (scrollable)">
               <table class="itinerary">
                 <caption class="visually-hidden">A working itinerary</caption>
                 <thead>
@@ -171,10 +172,10 @@
 <div class="xp-list">
   <details class="disclosure xp-item xp-item--senior wash wash--blue" open>
     <summary class="disclosure__summary">
-      <hgroup class="disclosure__heading">
+      <div class="disclosure__heading">
         <h3 class="disclosure__title">Senior Analytics Engineer</h3>
         <p class="disclosure__meta">FPT Software · Dec 2024 – Jul 2025</p>
-      </hgroup>
+      </div>
       <span class="disclosure__aside">US$43B AUM fund · 5 GB/day Databricks</span>
       <span class="chevron" aria-hidden="true"><svg class="icon"><use href="#i-chevron"/></svg></span>
     </summary>
@@ -213,10 +214,10 @@
 
   <details class="disclosure xp-item xp-item--junior wash wash--blue">
     <summary class="disclosure__summary">
-      <hgroup class="disclosure__heading">
+      <div class="disclosure__heading">
         <h3 class="disclosure__title">Junior Analytics Engineer</h3>
         <p class="disclosure__meta">FPT Software · Mar 2023 – Dec 2024</p>
-      </hgroup>
+      </div>
       <span class="disclosure__aside">Automated board-level fund reporting in SQL + Power BI</span>
       <span class="chevron" aria-hidden="true"><svg class="icon"><use href="#i-chevron"/></svg></span>
     </summary>
@@ -233,10 +234,10 @@
 
   <details class="disclosure xp-item xp-item--intern wash wash--blue">
     <summary class="disclosure__summary">
-      <hgroup class="disclosure__heading">
+      <div class="disclosure__heading">
         <h3 class="disclosure__title">Data Analyst Intern</h3>
         <p class="disclosure__meta">Ubisoft · Aug 2022 – Feb 2023</p>
-      </hgroup>
+      </div>
       <span class="disclosure__aside">30M+ monthly active users across 13 games · Tableau, BigQuery + Firebase</span>
       <span class="chevron" aria-hidden="true"><svg class="icon"><use href="#i-chevron"/></svg></span>
     </summary>
@@ -263,10 +264,10 @@
 <div class="rs-list">
   <details class="disclosure rs-item rs-item--ccu wash wash--sage" open>
     <summary class="disclosure__summary">
-      <hgroup class="disclosure__heading">
+      <div class="disclosure__heading">
         <p class="disclosure__meta">CCU research internship · 2026</p>
         <h3 class="disclosure__title">Robust open-vocabulary detection under corruption</h3>
-      </hgroup>
+      </div>
       <span class="chevron" aria-hidden="true"><svg class="icon"><use href="#i-chevron"/></svg></span>
     </summary>
     <div class="disclosure__body">
@@ -307,10 +308,10 @@
 
   <details class="disclosure rs-item rs-pub wash wash--blue">
     <summary class="disclosure__summary">
-      <hgroup class="disclosure__heading">
+      <div class="disclosure__heading">
         <p class="disclosure__meta"><span>SmartAgri &amp; SuSY · 2026</span> <span class="rs-status">First author · accepted</span></p>
         <h3 class="disclosure__title">Deep Imputation Does Not Pay Off on Agricultural IoT Networks: A Rate-Swept Benchmark</h3>
-      </hgroup>
+      </div>
       <span class="chevron" aria-hidden="true"><svg class="icon"><use href="#i-chevron"/></svg></span>
     </summary>
     <div class="disclosure__body">
@@ -321,10 +322,10 @@
 
   <details class="disclosure rs-item rs-pub rs-pub--lre wash wash--sage">
     <summary class="disclosure__summary">
-      <hgroup class="disclosure__heading">
+      <div class="disclosure__heading">
         <p class="disclosure__meta"><span>Language Resources &amp; Evaluation</span> <span class="rs-status">Co-first author · arXiv · under review</span></p>
         <h3 class="disclosure__title">Investigating the Influence of Prompt and Response Languages on LLM Content Generation</h3>
-      </hgroup>
+      </div>
       <span class="chevron" aria-hidden="true"><svg class="icon"><use href="#i-chevron"/></svg></span>
     </summary>
     <div class="disclosure__body">
@@ -345,11 +346,11 @@
 <div class="ed-timeline">
   <details class="disclosure ed-entry">
     <summary class="disclosure__summary">
-      <hgroup class="disclosure__heading">
+      <div class="disclosure__heading">
         <h3 class="disclosure__title">Erasmus Mundus M.Sc. in Advanced Machine Learning &amp; Optimisation of Systems</h3>
         <p class="disclosure__meta">Aug 2025 – Present</p>
-      </hgroup>
-      <span class="disclosure__aside">UPC Barcelona → Tirana → UTC Compiègne</span>
+      </div>
+      <span class="disclosure__aside" aria-hidden="true">UPC Barcelona → Tirana → UTC Compiègne</span>
       <span class="chevron" aria-hidden="true"></span>
     </summary>
     <div class="disclosure__body">
@@ -442,13 +443,13 @@
     </a>
   </li>
   <li class="ct-links__item">
-    <a class="ct-links__link" href="https://www.linkedin.com/in/nhanthanh123/" target="_blank" rel="noopener">
+    <a class="ct-links__link" href="https://www.linkedin.com/in/nhanthanh123/">
       <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>
       linkedin.com/in/nhanthanh123
     </a>
   </li>
   <li class="ct-links__item">
-    <a class="ct-links__link" href="https://github.com/nhan123lise" target="_blank" rel="noopener">
+    <a class="ct-links__link" href="https://github.com/nhan123lise">
       <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
       github.com/nhan123lise
     </a>

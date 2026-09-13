@@ -22,10 +22,13 @@ references only and must never be copied into `site/` wholesale.
 ```sh
 npx serve site -l 4321                       # local preview
 npx sharp-cli -i ProfilePicture.jpg -o site/assets/ -f avif resize 480   # regenerate an image variant
-netlify deploy --dir site          # draft deploy (verify on the draft URL)
-netlify deploy --dir site --prod   # production — personal Netlify account, NOT the wrangler/Cloudflare
-                                   # login on this machine (that one is an employer account)
 ```
+
+## Hosting
+
+GitHub Pages on Nhan's repo `nhan123lise/nhan123lise.github.io`. `.github/workflows/pages.yml`
+publishes only `site/` on every push to `main` that touches it. Never use the wrangler/Cloudflare
+login on this machine (employer account). The 2021 site is archived on branch `legacy-2021`.
 
 ## Content rules that are easy to break
 

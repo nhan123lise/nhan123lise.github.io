@@ -1,3 +1,0 @@
-# Only woff2 fonts are immutable. Change a font file = give it a new filename.
-/assets/fonts/*.woff2
-  Cache-Control: public, max-age=31536000, immutable

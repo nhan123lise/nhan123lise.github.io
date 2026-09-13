@@ -10,7 +10,7 @@ Authority: `design-concepts/DESIGN-HANDOFF.md` (visual/interaction/a11y rules) a
 | Framework | Plain static `index.html` + `styles.css` + `main.js` | Astro, 11ty, Next | Handoff §11 forbids a framework unless required; one page, two JS behaviours (active nav, `<dialog>` menu). No build = nothing to break. |
 | Image variants | Generated once with `npx sharp-cli`, committed to `site/assets/` | Build-time pipeline | Assets change ~never; a build step for 3 images is overhead. |
 | Fonts | Self-hosted woff2 (Bricolage Grotesque 700/800, Source Sans 3 400/600, Caveat 500), latin + latin-ext + vietnamese subsets as needed | Google Fonts CDN | EU audience (GDPR rulings on Google Fonts); fewer origins. |
-| Hosting | Netlify (personal account), `netlify deploy --dir site` (draft URL, verify) then `--prod` | Cloudflare Pages, GitHub Pages | wrangler is authenticated to an employer account — a third party's personal site must not live there. Netlify CLI is on the personal account; sites can be transferred to Nhan's own team later (keeps URL). GitHub Pages needs a public repo. |
+| Hosting | GitHub Pages on Nhan's `nhan123lise.github.io` repo, Actions workflow uploads `site/` only | Netlify (personal), Cloudflare Pages | Revised 2026-09-13: Nhan owns the repo and the github.io URL, which closes the custody follow-up. wrangler is an employer account. Needs the repo public (or a paid plan) and Pages source = GitHub Actions. |
 | Deploy root | `site/` only | repo root | Guarantees mockups, `Reference-vibe.PNG`, docs never ship (handoff §11). |
 
 ## Layout
@@ -22,7 +22,6 @@ site/
   main.js           IntersectionObserver → aria-current; dialog open/close/focus restore
   assets/           portrait (avif/webp/jpg, 480+960w), washes (webp+png), research illustration, fonts/
   favicon.svg
-  _headers          fonts/* immutable; everything else left at Netlify default (max-age=0, must-revalidate) because filenames are not hashed
 ```
 
 ## Decorative layer

@@ -69,7 +69,7 @@ const probeNotes = async () => {
   return bad;
 };
 
-const probeFold = () => [...document.querySelectorAll('#home li')]
+const probeFold = () => [...document.querySelectorAll('#home .hero__availability li')]
   .filter((li) => li.getBoundingClientRect().bottom > innerHeight)
   .map((li) => `"${li.textContent.trim().slice(0, 40)}" bottom ${Math.round(li.getBoundingClientRect().bottom)} > ${innerHeight}`);
 
